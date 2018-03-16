@@ -1,0 +1,19 @@
+{
+  "name": "nucreativa/laravel-frontaccounting-models",
+  "description": "Eloquent Models of FrontAccounting",
+  "type": "library",
+  "license": "MIT",
+  "version": "0.1.0",
+  "authors": [
+    {
+      "name": "Ary Wibowo",
+      "email": "nucreativa@gmail.com"
+    }
+  ],
+  "minimum-stability": "stable",
+  "autoload": {
+    "psr-4": {
+      "Nucreativa\\LaravelFrontAccountingModels\\": "src/"
+    }
+  }
+}
