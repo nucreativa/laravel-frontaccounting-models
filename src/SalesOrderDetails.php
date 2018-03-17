@@ -6,7 +6,7 @@ use Illuminate\Database\Eloquent\Model;
 
 class SalesOrderDetails extends Model
 {
-	protected $table = 'sales_order_details';
+	protected $table = 'fa_sales_order_details';
 	protected $primaryKey = 'id';
 
 	public function salesOrder() {

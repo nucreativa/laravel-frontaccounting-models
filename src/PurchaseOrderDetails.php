@@ -4,9 +4,8 @@ namespace Nucreativa\LaravelFrontAccountingModels;
 
 use Illuminate\Database\Eloquent\Model;
 
-class PurchaseOrderDetails extends Model
-{
-	protected $table = 'purch_order_details';
+class PurchaseOrderDetails extends Model {
+	protected $table = 'fa_purch_order_details';
 	protected $primaryKey = 'po_detail_item';
 
 	public function purchaseOrder() {
@@ -14,6 +13,6 @@ class PurchaseOrderDetails extends Model
 	}
 
 	public function item() {
-		return $this->belongsTo(Item::class, 'item_code', 'item_code');
+		return $this->belongsTo( Item::class, 'item_code', 'item_code' );
 	}
 }

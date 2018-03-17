@@ -4,7 +4,7 @@ namespace Nucreativa\LaravelFrontAccountingModels;
 
 use Illuminate\Database\Eloquent\Model;
 
-class Item extends Model {
-	protected $table = 'fa_item_codes';
+class CreditStatus extends Model {
+	protected $table = 'fa_credit_status';
 	protected $primaryKey = 'id';
 }
