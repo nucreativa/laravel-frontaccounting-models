@@ -5,7 +5,7 @@ namespace Nucreativa\LaravelFrontAccountingModels;
 use Illuminate\Database\Eloquent\Model;
 
 class PurchaseOrderDetails extends Model {
-	protected $table = 'fa_purch_order_details';
+	protected $table = 'purch_order_details';
 	protected $primaryKey = 'po_detail_item';
 
 	public function purchaseOrder() {

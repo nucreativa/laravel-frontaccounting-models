@@ -15,5 +15,8 @@
     "psr-4": {
       "Nucreativa\\LaravelFrontAccountingModels\\": "src/"
     }
+  },
+  "require": {
+    "coenjacobs/eloquent-composite-primary-keys": "^1.0"
   }
 }

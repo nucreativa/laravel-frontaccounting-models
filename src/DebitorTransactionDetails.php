@@ -5,7 +5,7 @@ namespace Nucreativa\LaravelFrontAccountingModels;
 use Illuminate\Database\Eloquent\Model;
 
 class DebitorTransactionDetails extends Model {
-	protected $table = 'fa_debtor_trans_details';
+	protected $table = 'debtor_trans_details';
 	protected $primaryKey = 'id';
 
 	public function debitorTransaction() {

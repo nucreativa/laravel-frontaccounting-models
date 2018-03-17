@@ -4,9 +4,13 @@ namespace Nucreativa\LaravelFrontAccountingModels;
 
 use Illuminate\Database\Eloquent\Model;
 
-class Debitors extends Model {
-	protected $table = 'debtor_master';
-	protected $primaryKey = 'id';
+class Suppliers extends Model {
+	protected $table = 'suppliers';
+	protected $primaryKey = 'supplier_id';
+
+	public function details() {
+		return $this->hasMany( SupplierTransaction::class, 'supplier_id' );
+	}
 
 	public function dimension1() {
 		return $this->hasOne( Dimensions::class, 'id', 'dimension_id' );
