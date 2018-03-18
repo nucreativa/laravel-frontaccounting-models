@@ -13,6 +13,6 @@ class PurchaseOrderDetails extends Model {
 	}
 
 	public function item() {
-		return $this->belongsTo( Item::class, 'item_code', 'item_code' );
+		return $this->hasMany( Item::class, 'item_code', 'item_code' );
 	}
 }

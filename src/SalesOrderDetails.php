@@ -13,7 +13,7 @@ class SalesOrderDetails extends Model
 		return $this->belongsTo( SalesOrder::class, 'order_no' );
 	}
 
-	public function item() {
-		return $this->belongsTo(Item::class, 'stk_code', 'stock_id');
+	public function stock() {
+		return $this->belongsTo(Stock::class, 'stock_id', 'stock_id');
 	}
 }
