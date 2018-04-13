@@ -70,6 +70,10 @@ class Stock extends Model {
 		return $this->hasOne( StockFA::class, 'fa_class_id', 'fa_class_id' );
 	}
 
+	public function prices() {
+		return $this->hasMany( Prices::class, 'stock_id', 'stock_id' );
+	}
+
 	public function dimension1() {
 		return $this->hasOne( Dimensions::class, 'id', 'dimension_id' );
 	}

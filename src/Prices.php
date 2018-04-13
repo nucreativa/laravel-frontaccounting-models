@@ -20,4 +20,8 @@ class Prices extends Model {
 		'curr_abrev',
 		'price'
 	];
+
+	public function type() {
+		return $this->hasOne(SalesType::class, 'id', 'sales_type_id');
+	}
 }
