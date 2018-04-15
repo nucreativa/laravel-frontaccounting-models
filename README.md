@@ -8,7 +8,7 @@ FrontAccounting tables model for Laravel.
 
 ##### How to Use
 ```
-https://packagist.org/packages/nucreativa/laravel-frontaccounting-models
+composer require nucreativa/laravel-frontaccounting-models
 ```
 
 ##### Related Project
